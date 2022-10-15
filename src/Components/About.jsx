@@ -7,25 +7,32 @@ export default function About() {
 
         <Grid
             container
-            direction="column"
+            direction="row"
             justifyContent="center"
             alignItems="center"
+            spacing={2}
         >
-            <Typography variant="h4" align="center">
-                About me
-            </Typography>
+            <Grid item xs={7}>
+                <Typography variant="h4" align="center" color="white">
+                    About me
+                </Typography>
+            </Grid>
+            <Grid item xs={7}>
+                <Typography variant="h6" align="center" color="#B2DFDB">
+                    Acá va el about asdf lkjasldj fajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asda
+                </Typography>
+            </Grid>
+            <Grid item xs={7}>
+                <Typography variant="h6" align="center" color="#B2DFDB">
+                    Acá va el párrafo 1 Lo que me gusta hacer es estudiar y trabajar mucho, lo hago todo el tiempo        
+                </Typography>
+            </Grid>
+            <Grid item xs={7}>
+                <Typography variant="h6" align="center" color="#B2DFDB">
+                    Acá va el párrafo 2 asdflk jasl djf ajsfla jsdfl kjsdañ lkjgalk gmljsda glkn asdfñl jatñsdhjgf lñknasdñl ghjñ al shjdgñljasda sdfasdg adfhfgja fdhjgag hfgfjsagf dhfghj kstrahbfg jsafggjsrfg gjsag dfhs hgad fhagg y ademas hago otrtas coass como cocinar y eso
+                </Typography>
+            </Grid>
 
-            <Typography variant="p" align="center" gutterBottom>
-                Acá va el about
-                asdflkjasldjfajsflajsdflkjsdañlkjgalkgmljsdaglknasdfñlja tñsdhjgflñknasdñlghjñalshjdgñljasdasdfasdgadfhf gjafdhjgaghfgfjsagfdhfghjkstrahbfgjs afggjsrfggjsagdfhshgadfhaggfhagjsfghafadfhgajghadfhahadfhadhadfhad fhadsfghagfrarghfadf hgadfhgadfhadfgadfgadfgadfg adfgadfgadfgadfgadfgadfgadfgadfgadfgad fgadfg
-            </Typography>
-            <Typography variant="p" align="center" gutterBottom>
-                Acá va el párrafo 1
-                asdflkjasldjfajsfl ajsdflkjsdañlkjgalkgmljsdag lknasdfñljatñsdhjgflñkna sdñlghjñalshjdgñl jasdasdfa sdgadfhfg jafdhjgaghfgfjs agfdhfghjks trahbfgjsafggjsrfggjsag dfhshgadfhag gfhagjsfghafadfh gajghadfhahadfhad hadfhadfhads fghagfrarghfadfhgadfhgadfhadfga dfgadfgadfgadfgadfgadfgadfgadfgadfgadfgadfgadfgadfgadfg
-            </Typography>
-            <Typography variant="p" align="center" gutterBottom>
-                Acá va el párrafo 2 asdflkjasl djfajsflajsdflkjsdañlkjgalkgmljsda glknasdfñljatñsdhjgflñknasdñlghjñalshjdgñljasdasdfasdg adfhfgjafdhjgaghfgfjsagfdhfghj kstrahbfg jsafggjsrfggjsagdfhs hgad fhaggfhagjsfghafadfhgajghadfhahadfhadhadf hadfhadsfghagfrarghfa dfhgadfhgadfhadfgadfgadfgadfgadfgadfgadfga dfgadfgadfga dfgadfgadfgadfgadfg
-            </Typography>
         </Grid>
 
 
