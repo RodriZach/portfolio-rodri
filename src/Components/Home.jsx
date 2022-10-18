@@ -60,7 +60,7 @@ export default function Home() {
                 <div className={style.button}>
                     <Grid container justifyContent="center" alignItems="center">
                         <HeadShake>
-                            <Button href="/data/CV Luis Rodrigo Hernandez.pdf" download="CV Luis Rodrigo Hernandez.pdf" color="primary" variant="contained">Descarga mi CV</Button>
+                            <Button href="/data/CV Luis Rodrigo Hernández.pdf" download="CV Luis Rodrigo Hernández.pdf" color="primary" variant="contained">Descarga mi CV</Button>
                         </HeadShake>
                     </Grid>
                 </div>
