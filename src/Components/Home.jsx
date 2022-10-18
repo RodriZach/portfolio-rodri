@@ -15,7 +15,7 @@ const theme = createTheme({
     },
     palette: {
         primary: {
-            main: '#26C6DA',
+            main: '#00838F',
             darker: '#053e85',
         },
         neutral: {
@@ -29,7 +29,9 @@ export default function Home() {
     return (
         <ThemeProvider theme={theme}>
             <div id="home" className={style.container}>
-                <img className={style.photo} src={rodri} alt="" />
+                <div className={style.photocontainer}>
+                    <img className={style.photo} src={rodri} alt="" />
+                </div>
                 <div className={style.type}>
                     <Typewriter
                         options={{
@@ -58,7 +60,7 @@ export default function Home() {
                 <div className={style.button}>
                     <Grid container justifyContent="center" alignItems="center">
                         <HeadShake>
-                            <Button color="primary" variant="contained">Descarga mi CV</Button>
+                            <Button href="/data/CV Luis Rodrigo Hernandez.pdf" download="CV Luis Rodrigo Hernandez.pdf" color="primary" variant="contained">Descarga mi CV</Button>
                         </HeadShake>
                     </Grid>
                 </div>

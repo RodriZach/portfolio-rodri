@@ -11,7 +11,7 @@ const theme = createTheme({
     },
     palette: {
         primary: {
-            main: '#26C6DA',
+            main: '#00838F',
             darker: '#053e85',
         },
         neutral: {
@@ -39,7 +39,7 @@ export default function Contact() {
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
-                        <Typography variant="h6" align="center" color="#B2DFDB">
+                        <Typography variant="h6" align="center" color="#E0F7FA">
                             ¿Te gustan mis trabajos?
                         </Typography>
                     </Grid>

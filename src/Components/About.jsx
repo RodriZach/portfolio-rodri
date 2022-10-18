@@ -21,18 +21,18 @@ export default function About() {
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
-                        <Typography variant="h6" align="center" color="#B2DFDB">
-                            Acá va el about asdf lkjasldj fajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asda
+                        <Typography variant="h6" align="center" color="#E0F7FA">
+                        Me considero una persona con iniciativa, proactivo, responsable, respetuoso, con pensamiento crítico, autónomo y con ganas de trabajar en equipo.
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
-                        <Typography variant="h6" align="center" color="#B2DFDB">
-                            Acá va el párrafo 1 Lo que me gusta hacer es estudiar y trabajar mucho, lo hago todo el tiempo
+                        <Typography variant="h6" align="center" color="#E0F7FA">
+                        Apasionado por la música y la creatividad. Encontré en la programación un mundo donde aprender y crear, y se ha vuelto una pasión en mi vida. 
                         </Typography>
                     </Grid>
                     <Grid item xs={7}>
-                        <Typography variant="h6" align="center" color="#B2DFDB">
-                            Acá va el párrafo 2 asdflk jasl djf ajsfla jsdfl kjsdañ lkjgalk gmljsda glkn asdfñl jatñsdhjgf lñknasdñl ghjñ al shjdgñljasda sdfasdg adfhfgja fdhjgag hfgfjsagf dhfghj kstrahbfg jsafggjsrfg gjsag dfhs hgad fhagg y ademas hago otrtas coass como cocinar y eso
+                        <Typography variant="h6" align="center" color="#E0F7FA">
+                        Mi próximo objetivo es seguir aprendiendo nuevas tecnologías y formar parte de un equipo de trabajo donde pueda desarrollarme como profesional y como persona.
                         </Typography>
                     </Grid>
                 </Grid>

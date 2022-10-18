@@ -13,11 +13,11 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#26C6DA',
+      main: '#00838F',
       darker: '#053e85',
     },
     neutral: {
-      main: '#37474F',
+      main: '#F9F9F9',
       contrastText: '#fff',
     },
   },
@@ -29,22 +29,22 @@ export default function NavBar() {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed" color="neutral">
+        <AppBar position="fixed" color="primary">
           <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="primary">
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="white">
               Luis Rodrigo Hernández
             </Typography>
-            <Link to="about" spy={true} smooth={true} offset={-30} duration={500}>
-              <Button color="primary" >About</Button>
+            <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
+              <Button size="large" color="neutral" >About</Button>
             </Link>
-            <Link to="skills" spy={true} smooth={true} offset={-30} duration={500}>
-              <Button color="primary" >Skills</Button>
+            <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+              <Button size="large" color="neutral" >Skills</Button>
             </Link>
             <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}>
-              <Button color="primary" >Projects</Button>
+              <Button size="large" color="neutral" >Projects</Button>
             </Link>
             <Link to="contact" spy={true} smooth={true} offset={-20} duration={500}>
-              <Button color="primary" >Contact</Button>
+              <Button size="large" color="neutral" >Contact</Button>
             </Link>
           </Toolbar>
         </AppBar>

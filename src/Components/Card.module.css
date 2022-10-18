@@ -4,7 +4,7 @@
     justify-content: center;
     min-height:  65vh;
     position: relative;
-    width:  700px;
+    width:  750px;
     height: 60px;
     margin-bottom: 8rem;
 }
@@ -52,6 +52,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
 }
 .link{
     display: flex;
