@@ -12,13 +12,17 @@ export default function Projects() {
             id: 1,
             title: "SPA Dogs",
             image: dogs,
-            description: ["Acá va el texto del proyecto asdf lkjasldj fajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asdafajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asda"]
+            description: "Diseñar y desarrollar una App de razas de perros que incluía: búsquedas, filtrados, ordenamientos, paginado y creación. Desarrollar la App utilizando ReactJS, Redux, CSS puro para el FRONT y Node.js con Express, PostgreSQL y Sequelize en el BACK. ",
+            link:"algo",
+            github:"https://github.com/RodriZach/PI-Dogs"
         },
         {
             id: 2,
             title: "E-Commerce Coffee´s Order",
             image: coffe,
-            description: "Acá va el texto del proyecto asdf lkjasldj fajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asdafajsf lajs dflkjs dañl kjgalk gmljsda glkn as dfñlj atñsdhjg flñkn asd ñlghj ñalsh jd gñlj asda"
+            description: "El proyecto consistió en una aplicación web E-Commerce de alimentos de tipo cafetería y comidas rápidas, que permite al cliente compras online. Tiene sistema de autenticación y una pasarela de pagos con Mercado Pago integrada. Posee Dashboard de Administrador.Desarrollada por un equipo de 7 personas usando ReactJs, Redux, PostgreSQL, NodeJS, Sequelize, Express, MercadoPago, Firebase, entre otras.",
+            link:"https://coffeemainapp.vercel.app/",
+            github:"https://github.com/RodriZach/PF-Coffee-main"
         }
     ]
     return (
@@ -45,6 +49,8 @@ export default function Projects() {
                                 title={item.title}
                                 image={item.image}
                                 description={item.description}
+                                link={item.link}
+                                github={item.github}
                             />
                         </div>
                     )
