@@ -4,33 +4,51 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-scroll';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  status: {
+    danger: '#e53e3e',
+  },
+  palette: {
+    primary: {
+      main: '#26C6DA',
+      darker: '#053e85',
+    },
+    neutral: {
+      main: '#37474F',
+      contrastText: '#fff',
+    },
+  },
+});
 
 
-export default function ButtonAppBar() {
+
+export default function NavBar() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Luis Rodrigo Hernández
-          </Typography>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Skills</Button>
-          <Button color="inherit">Projects</Button>
-          <Button color="inherit">Contact</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="fixed" color="neutral">
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="primary">
+              Luis Rodrigo Hernández
+            </Typography>
+            <Link to="about" spy={true} smooth={true} offset={-30} duration={500}>
+              <Button color="primary" >About</Button>
+            </Link>
+            <Link to="skills" spy={true} smooth={true} offset={-30} duration={500}>
+              <Button color="primary" >Skills</Button>
+            </Link>
+            <Link to="projects" spy={true} smooth={true} offset={-30} duration={500}>
+              <Button color="primary" >Projects</Button>
+            </Link>
+            <Link to="contact" spy={true} smooth={true} offset={-20} duration={500}>
+              <Button color="primary" >Contact</Button>
+            </Link>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </ThemeProvider>
   )
 }
