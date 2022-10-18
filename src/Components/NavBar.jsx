@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Logo from '../Asset/Logo.png';
 import { Link } from 'react-scroll';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -31,7 +32,8 @@ export default function NavBar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed" color="primary">
           <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="white">
+            <img  width="60" height="60" src={Logo} alt=""/>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} color="white" ml={2}>
               Luis Rodrigo Hernández
             </Typography>
             <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
